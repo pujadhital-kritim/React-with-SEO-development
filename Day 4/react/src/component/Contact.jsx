@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
-
 const Contact = () => {
-
     const[name,setName]=useState("");
     const[email,setEmail]=useState("");
     const[message,setMessage]=useState("");
- 
-
     const[submittedData,setSubmittedData]=useState(null);
 
     const handleSubmit=(e)=>{
@@ -18,16 +14,12 @@ const Contact = () => {
             email,
             message,
         });
-
         setName("");
         setEmail("");
         setMessage("");
-
     }
   return (
-
  <main>
-
 <header>
     <h1 className='heading'>Contact Me</h1>
     <p>Feel free to react out using the form below</p>
@@ -52,11 +44,8 @@ const Contact = () => {
             <div>
             <label htmlFor="message">Message:</label>
             <textarea name="message" id="message" value={message} onChange={(e)=> {setMessage(e.target.value)}}></textarea>
-
             </div>
-
             <button type='submit' onClick={handleSubmit}>Submit</button>
-
         </form>
     </section>
 
@@ -69,7 +58,6 @@ const Contact = () => {
         
     </section>
 )}
-
 </main>
   )
 }
