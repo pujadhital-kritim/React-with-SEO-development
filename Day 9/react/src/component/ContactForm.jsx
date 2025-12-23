@@ -66,15 +66,15 @@ const ContactForm = () => {
             <h2>Contact Form </h2>
             <form action="" onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
-                <input type="text" name='name' id='name' value={formData.name} onChange={handleChange} required />
+                <input type="text" name='name' id='name' value={formData.name} onChange={handleChange} />
                 {error.name && <p>{error.name}</p>}
 
                 <label htmlFor="email">Email:</label>
-                <input type="email" name='email' id='name' value={formData.email} onChange={handleChange} required />
+                <input type="email" name='email' id='email' value={formData.email} onChange={handleChange} />
                 {error.email && <p>{error.email}</p>}
 
                 <label htmlFor="message"> Your Message:</label>
-                <input type="text" name='message' id='message' value={formData.message} onChange={handleChange} required />
+                <textarea type="text" name='message' id='message' value={formData.message} onChange={handleChange} />
                 {error.message && <p>{error.message}</p>}
 
 
