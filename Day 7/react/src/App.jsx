@@ -1,5 +1,4 @@
 import React from 'react'
-
 const App = () => {
 const skills = [
   { id: 1, name: "HTML", level: "Advanced" },
@@ -8,11 +7,9 @@ const skills = [
   { id: 4, name: "React", level: "Beginner" },
 ];
 
-
 const advancedSkills= skills.filter(
   (skill)=> skill.level == "Advanced"
 );
-
 return (
 <section>
 <h2>My skills</h2>
@@ -22,13 +19,11 @@ return (
   ))}
 </ul>
 
-
 <h2>Advanced Skills</h2>
 <ul>
   {advancedSkills.map((skill)=>(
     <li key={skill.id}>{skill.name}</li>
-  )
-    
+  ) 
   )}
 </ul>
 
@@ -39,11 +34,8 @@ return (
   .map((skill)=>(
   <li key={skill.id}>{skill.name}</li>
   ))
-
   }
 </ul>
-
-
 
 {/* //conditional rendering */}
 
