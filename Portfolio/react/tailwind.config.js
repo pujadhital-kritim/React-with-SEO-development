@@ -5,12 +5,20 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
-  theme: {
-    extend: {
-      colors: {
-        primary: "#22c55e", 
+ theme: {
+  extend: {
+    colors: {
+      surface: {
+        light: "#ffffff",
+        dark: "#0f172a",
       },
+      textbase: {
+        light: "#0f172a",
+        dark: "#f8fafc",
+      },
+      primary: "#22c55e",
     },
   },
-  plugins: [],
+},
+
 };
