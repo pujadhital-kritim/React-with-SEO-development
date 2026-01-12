@@ -38,7 +38,7 @@ export default function About() {
             />
           </div>
 
-          {/* Glow */}
+       
           <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-green-300/40 to-transparent dark:from-green-400/10 blur-3xl" />
         </motion.div>
 
