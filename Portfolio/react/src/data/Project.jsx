@@ -15,7 +15,7 @@ export const projects = [
     description:
       "A modern, responsive portfolio built with React, Tailwind CSS, and Framer Motion, featuring light/dark themes and optimized performance.",
     tech: ["React", "Tailwind", "Framer Motion"],
-     image: "/developerlaptop.jpg",
+     image: "/developerlaptop.gif",
     live: "#",
     github: "https://github.com/pujadhital-kritim/React-with-SEO-development.git",
   },
