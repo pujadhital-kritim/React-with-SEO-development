@@ -115,7 +115,7 @@ const infoItems = [
   },
 ];
 
-// ── Component ──────────────────────────────────────────────────
+
 export default function Contact() {
   const [form,   setForm  ] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error

@@ -32,7 +32,7 @@ const imageVariants = {
 
 export default function Homepage() {
   return (
-    <header className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-white via-green-50/30 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-green-950/40 text-slate-900 dark:text-slate-100">
+    <header id="home" className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-white via-green-50/30 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-green-950/40 text-slate-900 dark:text-slate-100">
 
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
