@@ -40,19 +40,18 @@ export default function Homepage() {
       </div>
 
       {/* Top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-green-600 via-green-400 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r  to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-24 md:py-32 lg:py-40 w-full">
         <div className="grid md:grid-cols-2 gap-12 xl:gap-20 items-center">
 
-          {/* ── Left: Text Content ── */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
             className="flex flex-col gap-7"
           >
-            {/* Badge */}
+       
             <motion.div variants={itemVariants}>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-green-100/80 dark:bg-green-900/40 text-green-700 dark:text-green-400 border border-green-200/70 dark:border-green-700/40">
                 <span className="w-2 h-2 rounded-full bg-green-500 dark:bg-green-400 animate-pulse" />

@@ -54,13 +54,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Links */}
-        {/* <div className="hidden md:flex items-center gap-1">
-          <NavLink to="#" end className={linkClass}>Home</NavLink>
-          <NavLink to="#about" className={linkClass}>About</NavLink>
-          <NavLink to="#skills" className={linkClass}>Skills</NavLink>
-          <NavLink to="#projects" className={linkClass}>Projects</NavLink>
-        </div> */}
+       
 
 
         {/* Desktop Links */}

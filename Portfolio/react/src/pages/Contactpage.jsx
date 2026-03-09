@@ -84,7 +84,7 @@ const socials = [
     text:  "text-white",
   },
   {
-    href:  "mailto:pujadhital77@email.com",
+    href:  "mailto:pujadhital77@gmail.com",
     label: "Email",
     icon:  <Mail className="w-5 h-5" />,
     bg:    "bg-green-600 dark:bg-green-700",
@@ -98,8 +98,8 @@ const infoItems = [
   {
     icon: <Mail className="w-4 h-4" />,
     label: "Email",
-    value: "pujadhital77@email.com",
-    href:  "mailto:pujadhital77@email.com",
+    value: "pujadhital77@gmail.com",
+    href:  "mailto:pujadhital77@gmail.com",
   },
   {
     icon: <MapPin className="w-4 h-4" />,
@@ -118,7 +118,7 @@ const infoItems = [
 
 export default function Contact() {
   const [form,   setForm  ] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState("idle"); // idle | loading | success | error
+  const [status, setStatus] = useState("idle"); 
   const [error,  setError ] = useState("");
 
   function handleChange(e) {

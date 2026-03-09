@@ -54,9 +54,10 @@ const cards = [
     ),
     title: "Currently Exploring",
     items: [
-      "Advanced React architecture",
-      "Generative AI integrations",
-      "Rust for systems programming",
+      "Advanced React",
+      "Python",
+
+      
     ],
   },
   {
