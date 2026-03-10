@@ -126,29 +126,51 @@ export default function Contact() {
     if (error) setError("");
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  async function handleSubmit(e) {
+  e.preventDefault();
 
-    if (!form.name || !form.email || !form.message) {
-      setError("Please fill in all fields.");
-      return;
-    }
-    if (!/\S+@\S+\.\S+/.test(form.email)) {
-      setError("Please enter a valid email address.");
-      return;
-    }
-    if (form.message.length < 10) {
-      setError("Message should be at least 10 characters.");
-      return;
-    }
+  if (!form.name || !form.email || !form.message) {
+    setError("Please fill in all fields.");
+    return;
+  }
 
-    setError("");
-    setStatus("loading");
-    setTimeout(() => {
+  if (!/\S+@\S+\.\S+/.test(form.email)) {
+    setError("Please enter a valid email address.");
+    return;
+  }
+
+  if (form.message.length < 10) {
+    setError("Message should be at least 10 characters.");
+    return;
+  }
+
+  setStatus("loading");
+  setError("");
+
+  try {
+    const res = await fetch("http://localhost/contact.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(form)
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
       setStatus("success");
       setForm({ name: "", email: "", message: "" });
-    }, 1500);
+    } else {
+      setError("Something went wrong");
+      setStatus("idle");
+    }
+
+  } catch (err) {
+    setError("Server error");
+    setStatus("idle");
   }
+}
 
   return (
     <section
